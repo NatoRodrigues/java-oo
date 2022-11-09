@@ -1,9 +1,5 @@
 package Entidades;
 
-import java.util.Date;
-import java.util.Iterator;
-import java.util.ArrayList;
-
 public class Fornecedor{
 public String CNPj;
 public String telefone;
@@ -35,3 +31,4 @@ public void setNome(String nome) {
 }
 
 }
+

@@ -1,12 +1,10 @@
 package Entidades;
 
-import java.util.Date;
-import java.util.Iterator;
 import java.util.ArrayList;
 
 public class ConjuntoProdutos{
 
-    public static ArrayList<Produto> produtos = new ArrayList<Produto>();
+    public ArrayList<Produto> produtos = new ArrayList<Produto>();
 
     public static String incluirItems(){
 

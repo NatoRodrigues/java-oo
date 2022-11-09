@@ -1,12 +1,11 @@
 package Principal;
 
-import java.util.Date;
 
-import Entidades.Fornecedor;    
-import Entidades.Produto;
-import Entidades.TesteProduto;
-import Entidades.ConjuntoProdutos;
 import java.util.Scanner;
+
+import Entidades.ConjuntoProdutos;
+import Entidades.Fornecedor;
+import Entidades.Produto;
 
 
 public class Principal {
@@ -28,11 +27,10 @@ public class Principal {
         System.out.println("(3)Deseja atualizar valor de um produto? \n");
         System.out.println("(4)Exibir produtos e seus respectivos fornecedores");
 
-        Scanner ler = new Scanner(System.in);
+        try (Scanner ler = new Scanner(System.in)) {
             escolha = ler.nextInt();
-
-
-        do{
+        }
+            do{
         if(escolha == 1 || escolha == 4){
         switch(escolha) {
             case 1:
